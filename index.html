@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://kit.fontawesome.com/fa6088acd9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="calculator">
+			<div class="result">
+				<input type="text" readonly id="res" placeholder="0.0">
+			</div>
+			<div class="buttons">
+				<div id="c" onclick="res.value = '' ">C</div>
+				<div id="del" onclick="res.value = res.value.substring(0,res.value.length - 1) ">
+					<i class="fa-solid fa-delete-left"></i>
+				</div>
+
+
+				<div id="pers" onclick="res.value += '%' ">%</div>
+				<div id="div" onclick="res.value += '&#247;' ">&#247;</div>
+
+				<div id="n7" onclick="res.value += 7">7</div>
+				<div id="n8" onclick="res.value += 8">8</div>
+				<div id="n9" onclick="res.value += 9">9</div>
+
+				<div id="mul" onclick="res.value += '&#215;' ">&#215;</div>
+
+
+				<div id="n4" onclick="res.value += 4">4</div>
+				<div id="n5" onclick="res.value += 5">5</div>
+				<div id="n6" onclick="res.value += 6">6</div>
+				<div id="sub" onclick="res.value += '-'">-</div>
+
+				<div  id="n1" onclick="res.value += 1">1</div>
+				<div  id="n2" onclick="res.value += 2">2</div>
+				<div  id="n3" onclick="res.value += 3">3</div>
+				<div id="add" onclick="res.value += '+'">+</div>
+				<div id="zero" onclick="res.value += 0">0</div>
+				<div id="dot" onclick="res.value += '.'">.</div>
+				<div id="eql" onclick="calc()">=</div>
+
+
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>
+<script src="script.js"></script>
